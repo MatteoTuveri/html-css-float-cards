@@ -5,3 +5,6 @@
     font-family: 'Fredoka', sans-serif;
     font-family: 'Inter', sans-serif;
 }
+.debug{
+    border: 1px solid black;
+}
