@@ -10,9 +10,11 @@
     --color-names:white;
     --section-size:calc(100% / 3);
     --color-section:black;
+    --debug:transparent;
+    --color-mail:rgb(0, 140, 222);
 }
 .debug{
-    border: 1px solid black;
+    border: 1px solid var(--debug);
 }
 .clearfix::after{
     content: "";
@@ -38,12 +40,12 @@ p{
     float: left;
     width: var(--section-size);
 }
-
-.section-setings{
+.box-size{
     height: 120px;
     padding: 10px;
     margin:5px auto;
 }
+
 .img-size{
     height: 100%;
     width: auto;
@@ -53,8 +55,23 @@ img{
     width: auto;
     height: 100%;
 }
-.text-box-settings{
+.box-settings{
     color: var(--color-names);
     background-color: var(--color-section);
     height: 100%;
+    text-align: left;
+}
+.article-settings{
+    vertical-align: middle;
+    float: left;
+    padding: 2% 5%;
+}
+.description{
+    margin: 2% auto;
+}
+.mail{
+    color: var(--color-mail);
+}
+.mail:hover{
+    text-decoration: underline;
 }
