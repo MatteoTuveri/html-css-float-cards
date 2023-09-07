@@ -5,6 +5,33 @@
     font-family: 'Fredoka', sans-serif;
     font-family: 'Inter', sans-serif;
 }
+:root{
+    --color-title:red;
+    --color-names:white;
+    --section-size:calc(100% / 3);
+}
 .debug{
+    display: block;
     border: 1px solid black;
+}
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.wrapper{
+    width: 80%;
+    height: 80%;
+    min-width: 1080px;
+    min-height: 720px;
+    margin: 5% auto;
+    text-align: center;
+}
+#title{
+    color: var(--color-title);
+    font-size: 3em;
+}
+.float-left{
+    float: left;
+    width: var(--section-size) ;
 }
