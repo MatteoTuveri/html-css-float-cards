@@ -8,7 +8,7 @@
 :root{
     --color-title:red;
     --color-names:white;
-    --section-size:calc(100% / 3);
+    --box-size:calc(100% / 3);
     --color-section:black;
     --debug:transparent;
     --color-mail:rgb(0, 140, 222);
@@ -22,8 +22,10 @@
     clear: both;
 }
 .wrapper{
-    width: 1080px;
-    width: 1200px;
+    height: 80%;
+    width: 80%;
+    min-height: 1080px;
+    min-width: 1200px;
     margin: 5% auto;
     margin-top: 10px;
     text-align: center;
@@ -38,33 +40,29 @@ p{
 }
 .float-left{
     float: left;
-    width: var(--section-size);
 }
-.box-size{
-    height: 120px;
+#main-box{
+    height: 1080px;
+    width: 1200px;
+    margin: auto;
+}
+.box-sizing{
+    width: var(--box-size);
+    height: 110px;
     padding: 10px;
-    margin:5px auto;
+    margin: 5px auto;
 }
-
-.img-size{
-    height: 100%;
-    width: auto;
-}
-
-img{
-    width: auto;
+.img-sizing{
+    width: calc(100% / 4);
     height: 100%;
 }
-.box-settings{
+.text-setting{
+    width: calc(100% - (100% / 4));
+    background-color: black;
     color: var(--color-names);
-    background-color: var(--color-section);
-    height: 100%;
     text-align: left;
-}
-.article-settings{
-    vertical-align: middle;
-    float: left;
-    padding: 2% 5%;
+    height: 100%;
+    padding: 5px;
 }
 .description{
     margin: 2% auto;
@@ -74,4 +72,28 @@ img{
 }
 .mail:hover{
     text-decoration: underline;
+}
+#marco{
+    background-image: url(../Images/male1.png);
+    background-size: cover;
+}
+#laura{
+    background-image: url(../Images/female1.png);
+    background-size: cover;
+}
+#giorgio{
+    background-image: url(../Images/male2.png);
+    background-size: cover;
+}
+#marta{
+    background-image: url(../Images/female2.png);
+    background-size: cover;
+}
+#roberto{
+    background-image: url(../Images/male3.png);
+    background-size: cover;
+}
+#daniela{
+    background-image: url(../Images/female3.png);
+    background-size: cover;
 }
