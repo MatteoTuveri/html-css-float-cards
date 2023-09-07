@@ -9,9 +9,9 @@
     --color-title:red;
     --color-names:white;
     --section-size:calc(100% / 3);
+    --color-section:black;
 }
 .debug{
-    display: block;
     border: 1px solid black;
 }
 .clearfix::after{
@@ -23,15 +23,36 @@
     width: 80%;
     height: 80%;
     min-width: 1080px;
-    min-height: 720px;
+    max-width: 1200px;
     margin: 5% auto;
+    margin-top: 10px;
     text-align: center;
 }
 #title{
     color: var(--color-title);
     font-size: 3em;
+    margin: 20px auto;
+}
+p{
+    margin: 20px auto;
 }
 .float-left{
     float: left;
-    width: var(--section-size) ;
+    width: var(--section-size);
+}
+
+section{
+    height: 120px;
+    width: 180px;
+    padding: 1%;
+    margin:5px auto;
+}
+.img-size{
+    height: 100%;
+    width: auto;
+}
+
+img{
+    width: auto;
+    height: 100%;
 }
