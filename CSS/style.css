@@ -10,7 +10,7 @@
     --color-names:white;
     --box-size:calc(100% / 3);
     --color-section:black;
-    --debug:transparent;
+    --debug:none;
     --color-mail:rgb(0, 140, 222);
 }
 .debug{
